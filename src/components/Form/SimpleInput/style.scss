@@ -1,0 +1,35 @@
+.simple-input {
+  border: none !important;
+  box-shadow: none;
+  outline: none;
+  height: 50px;
+  margin-top: 1.25rem;
+  background-color: rgb(247, 247, 249) !important;
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057 !important;
+  border-radius: 4px;
+  width: 100%;
+  margin: 10px 0;
+  &:focus {
+    //   border: 1px solid $primary !important;
+  }
+  &[invalid] {
+    border: 1px solid red !important;
+    position: relative;
+  
+  }
+}
+
+.invalid-icon {
+    position: absolute;
+  //   width: 5px;
+  //   height: 5px;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-125%);
+    color: red;
+  }

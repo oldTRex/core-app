@@ -1,0 +1,46 @@
+.checkbox-container {
+  direction: rtl;
+  display: block;
+  position: relative;
+  padding-right: 30px;
+  user-select: none;
+  cursor: pointer;
+}
+.checkbox-container input {
+  display: none;
+}
+
+.checkbox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #eee;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkbox {
+  background: #ddd;
+}
+
+.checkbox-container input:checked ~ .checkbox {
+  background: #2196f3;
+}
+
+.checkbox-container input[disabled] ~ .checkbox {
+  background: #e4e7ea;
+}
+
+.checkbox-container input:checked ~ .checkbox::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  border-width: 0px 3px 3px 0px;
+  border-color: white;
+  border-style: solid;
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  transform: rotate(45deg);
+}

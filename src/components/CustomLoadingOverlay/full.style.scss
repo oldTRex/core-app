@@ -1,0 +1,18 @@
+.fulloverlay {
+    z-index: 1111111211111111111111 !important;
+  }
+  
+  .fullwrapper {
+    
+    .fulloverlay  {
+      // direction: ltr;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0 !important;
+      background: "rgba(0,0,0,0.95)";
+    }
+  }
+  

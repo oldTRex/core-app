@@ -1,0 +1,78 @@
+.main {
+    background-color: $mainContentBackground
+}
+
+// * {
+//     text-align: right;
+// }
+
+.ml-auto {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+}
+
+.margin-right-auto {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+.margin-left-auto {
+    margin-left: auto !important;
+}
+ol.breadcrumb {
+    direction: ltr;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    .breadcrumb-item::before {
+        padding: 0 .5rem !important;
+    }
+}
+
+
+ul.pagination {
+    direction: ltr;
+}
+
+
+.modal-classname {
+    direction: ltr;
+    .modal-content {
+        min-height: 60vh;
+        direction: ltr; 
+        * {
+            direction:ltr;
+        }
+        .modal-body {
+            height: 400px;
+        }
+    }
+}
+
+.ladda-button {
+    direction: ltr;
+}
+.list-group-item:first-child {
+    border-top: 0 !important;
+}
+
+
+.ltr {
+    *{
+        direction: ltr !important;
+    }
+}
+
+.form-check-input {
+    right :0;
+}
+
+.form-group {
+    position: relative;
+    padding-right: 20px;
+}
+
+
+.px-3 {
+    padding-left: 1rem !important;
+}

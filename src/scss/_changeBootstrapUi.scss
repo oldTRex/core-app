@@ -1,0 +1,266 @@
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col,
+.col-auto,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm,
+.col-sm-auto,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md,
+.col-md-auto,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg,
+.col-lg-auto,
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl,
+.col-xl-auto {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+blockquote {
+  background: #f9f9f9;
+  position: relative;
+  border: none;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  position: absolute;
+  right: -25px;
+  top: 23px;
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.nav-link.active {
+  background-color: #23282c !important;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+
+    border-left: 18px solid #ddd;
+  }
+}
+
+.padding-x-3 {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+.flex-wrap {
+  flex: wrap;
+}
+
+.card {
+  box-shadow: 0 0 13px 0 rgba(82, 63, 105, 0.05) !important;
+  border-radius: 4px !important;
+  border: none !important;
+  .card-header {
+    background: white;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    border-bottom: 1px solid rgb(235, 237, 242) !important;
+    color: #48465b !important;
+    font-size: 1.5em;
+  }
+  .card-footer {
+    background: white;
+    min-height: 60px;
+    border-top: 1px solid rgb(235, 237, 242) !important;
+  }
+}
+.app-header {
+  border-bottom: 1px solid rgb(235, 237, 242) !important;
+}
+
+.breadcrumb {
+  box-shadow: 0 10px 30px 0 rgba(82, 63, 105, 0.08);
+  border: 0 !important;
+  height: 55px;
+  padding: 20px 10px;
+  margin-bottom: 40px !important;
+}
+
+.main {
+  padding-top: 80px !important;
+}
+
+.app-footer {
+  background: white !important;
+  padding: 20px 5px;
+  border: none !important;
+}
+
+.btn {
+  min-height: auto;
+  min-width: auto;
+
+  border-radius: 3px !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
+}
+.btn-link {
+  box-shadow: none !important;
+}
+
+.btn-success {
+  background-color: #4caf50 !important;
+}
+
+.btn-square {
+  border-radius: 0px !important;
+}
+
+.circle {
+  border-radius: 100% !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-info {
+  color: white !important;
+}
+button {
+  outline: 0 !important;
+}
+.form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid $primary;
+}
+
+.table th {
+  border: none !important;
+  color: #48465b !important;
+  outline: none !important;
+}
+
+.th {
+  color: #48465b !important;
+}
+
+.table td,
+th {
+  border-color: rgb(235, 237, 242) !important;
+}
+
+.dropdown-item {
+  color: #74788d !important;
+  white-space: nowrap !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  &:hover {
+    color: #595d6e !important;
+    text-decoration: none;
+    background-color: #f7f8fa !important;
+  }
+}
+.dropdown-menu {
+  border: 0 !important;
+  z-index: 200000000000000000000000000000000000 !important;
+  box-shadow: 0 0 50px 0 rgba(82, 63, 105, 0.15);
+}
+
+.dropdown {
+  .dropdown-menu {
+    padding: 10px 4px;
+    min-height: 60px;
+  }
+}
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand img {
+  object-fit: contain;
+}
+
+.dropdown-header {
+  background: white;
+  color: #48465b;
+  border-bottom: 1px solid rgb(235, 237, 242) !important;
+}
+
+.modal-header {
+  direction: ltr !important;
+}
+
+.form-control {
+  min-height: 38px;
+}

@@ -1,0 +1,11 @@
+.table-responsive-sm {
+    @media(max-width: 700px) {
+        display: table;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+.react-bootstrap-table table {
+     table-layout: unset !important;
+}
